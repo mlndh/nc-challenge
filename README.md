@@ -1,4 +1,20 @@
 # NcChallenge
+Frontend challange for position at Natural Cycles. 
+
+# Description
+- Created a countdown app
+- Responsice both in landscape and portrait mode
+- Counter from today to end date selected by user with a event name
+
+Can be seen in action at: https://classy-fudge-9b5e91.netlify.app/ :)
+
+# Dependencies 
+ Used material design, ng2-fittext from (https://www.npmjs.com/package/ng2-fittext) and moment.js
+ 
+# Getting started
+Just clone this repo, run npm install and then ng serve
+
+##
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
 
