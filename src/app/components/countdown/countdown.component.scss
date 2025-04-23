@@ -1,0 +1,38 @@
+$layout-breakpoint-small: 390px;
+
+.countdown-app {
+  width: 100%;
+  text-align: center;
+  padding-top: 64px;
+  @media (max-width: $layout-breakpoint-small) {
+    padding-top: 171px;
+  }
+}
+.header-container {
+  min-height: 200px;
+}
+.text {
+  color: #72035d;
+  margin: 0;
+  padding-bottom: 3px;
+  font-weight: 800;
+  line-height: 135%;
+  @media (max-width: $layout-breakpoint-small) {
+    padding-bottom: 25px;
+  }
+}
+.input-fields-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-top: 24px;
+  @media (max-width: $layout-breakpoint-small) {
+    flex-direction: column;
+    gap: 49px;
+    padding-top: 148px;
+  }
+  mat-form-field {
+    width: 278px;
+  }
+}

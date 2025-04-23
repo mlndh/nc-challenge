@@ -1,0 +1,27 @@
+<div class="countdown-app">
+  <div class="header-container">
+    @if (form.valid) {
+    <div class="text" style="white-space: nowrap" [fittext]="true" [maxFontSize]="300" [activateOnResize]="true"
+      [modelToWatch]="form.value.title">
+      Time to {{ form.value.title }}
+    </div>
+    <div style="white-space: nowrap" [fittext]="true" [activateOnResize]="true" [modelToWatch]="timeRemaining">
+      {{ timeRemaining }}
+    </div>
+    }
+  </div>
+
+  <form [formGroup]="form" class="input-fields-container">
+    <mat-form-field appearance="outline" floatLabel="always">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" placeholder="Enter title" class="input" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" floatLabel="always">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Choose a date" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </form>
+</div>

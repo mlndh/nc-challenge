@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import '@fontsource/open-sauce-one/400.css'; 
+@include mat.core();
+
+$nc-challenge-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+
+:root {
+  @include mat.all-component-themes($nc-challenge-theme);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sauce One', sans-serif;
+  background-color: #f5f3f3;
+  width: 100%;
+}
