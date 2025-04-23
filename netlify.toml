@@ -1,3 +1,7 @@
+[build]
+  publish = "dist/nc-challenge/browser"
+  command = "ng build"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
